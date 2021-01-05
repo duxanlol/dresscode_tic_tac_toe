@@ -1,5 +1,5 @@
 # dresscode_tic_tac_toe
-CLI Implementation of a Game of 4 by 4 Tic Tac Toe (vs AI), with an added winstate.
+GUI Implementation of a Game of 4 by 4 Tic Tac Toe (vs AI), with an added winstate.
 
 
 Done for the Dresscode Challenge 
