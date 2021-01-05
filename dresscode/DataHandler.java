@@ -52,7 +52,7 @@ public class DataHandler {
 			return;
 
 		}
-		System.out.println("Loaded:" + (victoriousStatesPlayer1.size() + victoriousStatesPlayer1.size()) + " states.");
+		System.out.println("Loaded:" + (victoriousStatesPlayer1.size() + victoriousStatesPlayer2.size()) + " states.");
 }
 	
 	public static void writeBinaryDataToFile(String path) {
