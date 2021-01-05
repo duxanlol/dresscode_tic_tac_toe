@@ -25,7 +25,7 @@ public class StateGenerator {
 			return true;
 		} else {
 			stateHistory.add(state.getState());
-			State cloneState = state.clone();
+			//State cloneState = state.clone();
 			//for(int rotation = 0; rotation < 3; rotation++) 
 			//	stateHistory.add(cloneState.rotateClockwise());
 		}

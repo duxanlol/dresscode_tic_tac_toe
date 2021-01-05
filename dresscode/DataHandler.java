@@ -52,22 +52,22 @@ public class DataHandler {
 			return;
 
 		}
-		System.out.println("Loaded:" + (victoriousStatesPlayer1.size() + victoriousStatesPlayer2.size()) + " states.");
+		System.out.println("Loaded:" + (victoriousStatesPlayer1.size() + victoriousStatesPlayer1.size()) + " states.");
 }
 	
 	public static void writeBinaryDataToFile(String path) {
-		System.out.println("Writing data to cache file.");
+		System.out.println("Writing data to cache file. This could take a few seconds.");
 		DataOutputStream writerPlayer1 = null;
 		DataOutputStream writerPlayer2 = null;
 		try {
 			writerPlayer1 = new DataOutputStream(new FileOutputStream(new File(path+"1.dat")));
-			writerPlayer2 = new DataOutputStream(new FileOutputStream(new File(path+"2.dat")));
 			for (State s : victoriousStatesPlayer1) {
 					byte[] toWrite = Utility.convertStringToByteArray(s.toString());
 					for(int i = 0; i < 4; i++) {
 						writerPlayer1.writeByte(toWrite[i]);
 					}
 				}
+			writerPlayer2 = new DataOutputStream(new FileOutputStream(new File(path+"2.dat")));
 			for (State s : victoriousStatesPlayer2) {
 				byte[] toWrite = Utility.convertStringToByteArray(s.toString());
 				for(int i = 0; i < 4; i++) {
